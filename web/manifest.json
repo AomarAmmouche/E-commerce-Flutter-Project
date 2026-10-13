@@ -1,6 +1,6 @@
 {
-    "name": "shoopping_oa",
-    "short_name": "shoopping_oa",
+    "name": "ecommerce_dashboard",
+    "short_name": "ecommerce_dashboard",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

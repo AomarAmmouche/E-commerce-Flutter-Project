@@ -1,23 +1,27 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:ecommerce_dashboard/features/app/presentation/screens/app.dart';
 import 'package:flutter/material.dart';
-import 'package:shoopping_oa/features/app/presentation/screens/app.dart';
+
+
 
 void main() {
   runApp(
     DevicePreview(
-      enabled: true,
-      builder: (context) => const MainApp(),
+      enabled: !kReleaseMode,
+      builder: (context) => const MyApp(),
     ),
   );
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: App(),
+    return MaterialApp(
+         home:  App(),
+         debugShowCheckedModeBanner: false,
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:device_preview/device_preview.dart';
-import 'package:ecommerce_dashboard/features/app/presentation/screens/app.dart';
+import 'package:ecommerce_dashboard/layout/home/presentation/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-         home:  App(),
+         home:  HomePage(),
          debugShowCheckedModeBanner: false,
     );
   }

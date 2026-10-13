@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: !kReleaseMode,
       builder: (context) => const MyApp(),
     ),
   );
